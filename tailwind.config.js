@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       sans: [
+        'YouYuan',
         'PingFang TC',
         'Roboto',
         'ui-sans-serif',

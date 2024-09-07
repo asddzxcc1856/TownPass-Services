@@ -4,6 +4,7 @@
 
 @layer base {
   @font-face {
-    font-family: '"PingFang TC", Roboto';
+    font-family: 'YouYuan, "PingFang TC", Roboto';
+    src: url('@/assets/fonts/YouYuan.ttf') format('ttf');
   }
 }

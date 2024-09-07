@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router';
+import { onMounted } from 'vue/dist/vue.js';
+import { useToast } from 'vue-toastification';
+import HomeView from '@/views/HomeView.vue';
+import Navbar from '@/components/Navbar.vue';
 </script>
 
 <template>
-  <RouterView />
+  <Navbar />
+  <HomeView />
 </template>
