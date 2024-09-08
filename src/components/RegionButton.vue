@@ -27,7 +27,7 @@ const handleClick = () => {
   <div class="flex flex-col">
     <button
       @click="handleClick"
-      class="btn w-full flex items-center justify-center rounded-[24.5px] bg-[rgb(217,217,217)] pt-[10.5px] pb-[10.5px] text-center text-[24px] leading-[1.2] text-black"
+      class="btn w-full flex items-center justify-center rounded-[24.5px] bg-[rgb(217,217,217)] hover:bg-[rgb(100,100,100)] pt-[10.5px] pb-[10.5px] text-center text-[24px] leading-[1.2] text-black"
     >
       <!-- TODO -->
       {{ btn }}

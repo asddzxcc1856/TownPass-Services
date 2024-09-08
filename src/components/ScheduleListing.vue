@@ -23,9 +23,9 @@ const content = ref('您尚未規劃任何行程，請先至首頁選擇行程')
 
 <template>
   <div
-    class="mt-[55px] mb-0.5 flex flex-col bg-[rgb(16,22,79)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
+    class="font-Notofont mt-[55px] mb-0.5 flex flex-col bg-[rgb(16,22,79)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
   >
-    <div class="text-center justify-center text-purple-500 text-4xl font-semibold my-4">
+    <div class="text-center justify-center text-purple-500 text-4xl my-4 font-bold">
       {{ scheduleStore.schedules.length === 0 ? content : '' }}
     </div>
     <div class="mx-8 mt-[51px] mb-[514px] flex flex-col gap-y-1">

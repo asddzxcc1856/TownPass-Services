@@ -22,7 +22,7 @@ const route = useRoute();
     <div class="mx-8 mt-[51px] mb-[514px] flex flex-col gap-y-1">
       <Plan
         v-if="isAdd == false && route.query.attractionId"
-        :id="1"
+        :id="0"
         :name="route.query.attractionId"
         :introduction="route.query.introduction"
         @isAddState="isAddState"
@@ -50,7 +50,7 @@ const route = useRoute();
     </div>
     <RouterLink
       to="/schedules"
-      class="flex justify-center items-center h-[51px] bg-[rgb(16,22,79)] text-white text-[16px] font-Roboto font-normal leading-[1.37]"
+      class="font-Notofont flex justify-center text-stone-400 text-xl bg-gray-600 mx-20 rounded-md"
     >
       查看行程
     </RouterLink>

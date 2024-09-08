@@ -65,7 +65,7 @@ import CategoryItem from './CategoryItem.vue';
       ></CategoryItem>
       <CategoryItem
         className="row-span-1 column-span-1"
-        attractionButton="無障礙遊"
+        attractionButton="無障礙旅遊"
         attractionImage="wheelchair.svg"
       ></CategoryItem>
     </div>

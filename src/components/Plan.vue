@@ -37,13 +37,13 @@ const isMapDialogOpen = ref(false);
 const planStore = usePlanStore();
 
 const handleConfirm = () => {
-  if (props.id && props.name && props.introduction && !props.isAdd && props.state == false) {
+  if (props.id == 0 && props.name && props.introduction && !props.isAdd && props.state == false) {
     isMapDialogOpen.value = true;
   }
 };
 
 const onPositiveClick = () => {
-  if (props.id && props.name && props.introduction) {
+  if (props.id == 0 && props.name && props.introduction) {
     planStore.addPlan(route.params.id, props.name, props.introduction);
     emit('isAddState');
   }
@@ -64,10 +64,10 @@ console.log(props.state);
     <p
       class="font-Roboto mb-0.5 flex min-w-0 items-center text-[16px] font-normal leading-[1.37] text-[rgb(71,82,89)]"
     >
-      {{ props.id - 1 }} {{ props.name }}
+      {{ props.id }} {{ props.name }}
     </p>
     <img
-      v-show="props.id == 1 && props.state == false && !props.isAdd"
+      v-show="props.id == 0 && props.state == false && !props.isAdd"
       class="w-12 min-w-0"
       src="/src/assets/images/plus-icon.svg"
       alt="alt text"

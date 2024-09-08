@@ -46,7 +46,7 @@ const attraction = getImageUrl(props.attractionImage);
         />
         <button
           @click="handleClick"
-          class="mr-2 ml-1.5 flex w-[109px] max-w-full justify-center rounded-lg bg-[rgb(198,109,109)] pt-[1.5px] pr-[22px] pb-[1.5px] pl-[22px] text-center font-Inter text-[16px] font-normal leading-[1.37] text-white"
+          class="mr-2 ml-1.5 flex w-[109px] max-w-full justify-center rounded-lg bg-[rgb(198,109,109)] hover:bg-[rgb(100,50,50)] hover:bg-origin-border bg-left-bottom pt-[1.5px] pr-[22px] pb-[1.5px] pl-[22px] text-center font-Inter text-[16px] font-normal leading-[1.37] text-white"
         >
           <!-- Button to view more about the attraction. -->
           {{ props.attractionButton }}
