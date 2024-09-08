@@ -1,6 +1,6 @@
-import { ref } from "vue";
-import { useRoute } from "vue-router";
-import { defineStore } from "pinia";
+import { ref } from 'vue';
+import { useRoute } from 'vue-router';
+import { defineStore } from 'pinia';
 
 // 連接Navbar
 export const useShowStore = defineStore('show', () => {

@@ -66,9 +66,22 @@ console.log(props.state);
     >
       {{ props.id }} {{ props.name }}
     </p>
+
     <img
-      v-show="props.id == 0 && props.state == false && !props.isAdd"
+      v-if="props.id == 0 && props.state == false && !props.isAdd"
       class="w-12 min-w-0"
+      src="/src/assets/images/plus-icon.svg"
+      alt="alt text"
+    />
+    <img
+      v-else
+      @click="
+        () => {
+          planStore.removePlan(props.id - 1);
+          emit('isAddState');
+        }
+      "
+      class="w-12 min-w-0 rotate-45"
       src="/src/assets/images/plus-icon.svg"
       alt="alt text"
     />

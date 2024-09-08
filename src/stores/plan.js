@@ -4,7 +4,7 @@ import Plan from '@/components/Plan.vue';
 
 export const usePlanStore = defineStore('plan', () => {
   const plans = ref([]);
-  const totalPlan = ref(1);
+  const totalPlan = ref(0);
   // const newScheduleId = ref(0);
   const addPlan = (keyid, name, introduction) => {
     plans.value.push({
@@ -16,6 +16,9 @@ export const usePlanStore = defineStore('plan', () => {
     });
     totalPlan.value++;
   };
+  const removePlan = (keyid) => {
+    plans.value = plans.value.filter((plan) => plan.id !== keyid);
+  }
 
-  return { plans, totalPlan, addPlan };
+  return { plans, totalPlan, addPlan, removePlan };
 });
